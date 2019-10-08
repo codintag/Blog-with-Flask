@@ -1,0 +1,66 @@
+{% include 'partials/_header.html'%}
+
+<body>
+        {% include 'partials/_nav.html'%}
+
+        <div class="jumbotron text-center">
+            <h1>Contactez-nous!</h1>
+        </div>
+    
+    <span><a href="/">Retour à la page d'accueil</a></span>
+
+    <div class="jumbotron bg-white col-md-6 m-auto">
+            <form action="contactPortfolio.php" class="needs-validation font-weight-bold text-black-50" method="POST" novalidate>
+    
+                <h1 class="mb-4 pb-4 font-weight-bold text-primary">Contactez-moi!</h1>
+    
+                <div class="form-group">
+                    <label for="lastname">Nom:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Entrez votre Nom" name="lastname" required autofocus>
+                    <div class="valid-feedback">Valide.</div>
+                    <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="uname">Prénom:</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Entrez votre prénom" name="uname"
+                    required>
+                    <div class="valid-feedback">Valide.</div>
+                    <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Votre Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Entrez votre courriel" name="email" required>
+                    <div class="valid-feedback">Valide.</div>
+                    <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+                </div>
+    
+                <div class="form-group form-check">
+                    <label class="form-check-label"></label>
+                        <input class="form-check-input" type="checkbox" name="remember" required> en cochant cette case j'accepte de recevoir des informations.
+                        <div class="valid-feedback">Valide.</div>
+                        <div class="invalid-feedback">Cochez la case pour continuer!</div>
+                    
+                </div>
+    
+                <div class="form-group form-check pl-0">
+    
+                    <label for="comment">Commentaire:</label>
+    
+                    <textarea class="form-control" rows="5" id="comment" name="comment" required placeholder="Votre commentaire ici..."></textarea>
+    
+                    <div class="valid-feedback">Valide.</div>
+                    <div class="invalid-feedback">Veuillez remplir le champ du formulaire!</div>
+                
+                </div>
+                
+                <button type="submit" class="btn btn-primary col-md-5 col-5">Evoyer</button>
+                <button type="reset" class="btn btn-primary col-md-5 col-5 float-right">Réinitialiser</button>
+                <div id="envoie" style="display: none">Votre message à été envoyé!</div>
+            </form>
+        </div>
+
+    {% include 'partials/_footer.html'%}
+</body>
+</html>
