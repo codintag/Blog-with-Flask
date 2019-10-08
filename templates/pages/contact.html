@@ -1,7 +1,6 @@
-{% include 'partials/_header.html'%}
+{% extends 'layouts/default.html' %}
 
-<body>
-        {% include 'partials/_nav.html'%}
+    {% block body%}
 
         <div class="jumbotron text-center">
             <h1>Contactez-nous!</h1>
@@ -61,6 +60,4 @@
             </form>
         </div>
 
-    {% include 'partials/_footer.html'%}
-</body>
-</html>
+    {% endblock body%}

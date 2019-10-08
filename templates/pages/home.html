@@ -1,9 +1,7 @@
 
-{% include 'partials/_header.html'%}
+{% extends 'layouts/default.html' %}
 
-<body>
-    
-{% include 'partials/_nav.html'%}
+{% block body %}
 
 <div class="">
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -29,11 +27,8 @@
           </div>
 </div>
         
-    <div class="jumbotron text-center mt-5">
-        <h1 class="">Bienvenue sur mon Blog</h1>
-    </div>
+<div class="jumbotron text-center mt-5">
+    <h1 class="">Bienvenue sur mon Blog</h1>
+</div>
 
-    {% include 'partials/_footer.html'%}
-    
-</body>
-</html>
+{% endblock body %}
