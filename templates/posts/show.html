@@ -1,0 +1,24 @@
+{% extends 'layouts/default.html' %}
+    {% block body %}
+        <div class="jumbotron text-center">
+            <h1>A propos</h1>
+        </div>
+    <div class="container my-4">
+        <span><a href="/">Retour à la page d'accueil</a></span>
+    </div>
+    
+    <div class="container">
+            <h1>Blog</h1>
+            
+    </div>
+
+<div class="container px-5">
+
+    <article class="px-5">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.content }}</p>
+    </article>
+ <p><a href="{{ url_for('posts_index') }}">&#8656; Retour au Blog</a></p>
+</div> 
+
+    {% endblock body%}
